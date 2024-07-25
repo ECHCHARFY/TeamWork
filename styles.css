@@ -3,17 +3,18 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-image: url("https://enciendelaluz.es/wp-content/uploads/2022/06/devops-scaled.jpg");
 }
 
 header {
-    background: #333;
+    background: #377ec0;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
 }
 
 nav {
-    background: #444;
+    background: #f15151;
     color: #fff;
     padding: 0.5rem;
     text-align: center;
@@ -57,7 +58,7 @@ section h2, aside h2 {
 }
 
 footer {
-    background: #333;
+    background: #080000;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
