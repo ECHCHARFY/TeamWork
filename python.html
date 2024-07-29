@@ -1,35 +1,38 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="python.html">Python</a></li>
-                <li><a href="docker.html">Docker</a></li>
-                <li><a href="git.html">Git/GitHub</a></li>
+                <li><strong>Automatisation :</strong> Python est souvent utilisé pour écrire des scripts d'automatisati>                <li><strong>Développement de logiciels :</strong> Grâce à des bibliothèques comme PyQt ou Tkinter, Pyth>                <li><strong>Jeux vidéo :</strong> Des bibliothèques comme Pygame permettent de développer des jeux en P>
             </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1>Python</h1>
-        <p>Contenu sur Python...</p>
+        </section>
+        <section id="resources">
+            <h2>Ressources pour Apprendre Python</h2>
+            <p>Voici quelques ressources recommandées pour apprendre Python :</p>
+            <ul>
+                <li><a href="https://www.python.org/doc/">Documentation officielle de Python</a></li>
+                <li><a href="https://www.codecademy.com/learn/learn-python-3">Codecademy - Learn Python</a></li>
+                <li><a href="https://www.coursera.org/specializations/python">Coursera - Spécialisation en Python</a></>
+                <li><a href="https://realpython.com/">Real Python</a></li>
+                <li><a href="https://www.learnpython.org/">LearnPython.org</a></li>
+            </ul>
+        </section>
     </main>
-
     <footer>
-        <p>Réalisé par :</p>
-        <ul>
-            <li>Étudiant 1</li>
-            <li>Étudiant 2</li>
-            <li>Étudiant 3</li>
-        </ul>
+        <p>Created with care</p>
     </footer>
+    <script>
+	
+	document.addEventListener('DOMContentLoaded', function() {
+    		const links = document.querySelectorAll('nav ul li a');
+
+    		links.forEach(link => {
+        		link.addEventListener('click', function(event) {
+            			event.preventDefault();
+            			const sectionId = this.getAttribute('href').substring(1);
+            			const section = document.getElementById(sectionId);
+
+            			section.scrollIntoView({ behavior: 'smooth' });
+        		});
+    		});
+	});
+    </script>
 </body>
 </html>
+
+
