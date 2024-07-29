@@ -1,89 +1,82 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-image: url("https://enciendelaluz.es/wp-content/uploads/2022/06/devops-scaled.jpg");
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    background: #377ec0;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-nav {
-    background: #f15151;
-    color: #fff;
-    padding: 0.5rem;
-    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 1rem;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
 }
 
 main {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-}
-
-main section {
-    flex: 3;
-    margin-right: 1rem;
-}
-
-main aside {
     flex: 1;
-    background: #f4f4f4;
-    padding: 1rem;
-    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
 }
 
-section h2, aside h2 {
-    color: #333;
+.logos {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logos a {
+    margin: 0 15px;
+}
+
+.logos img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.logos img:hover {
+    transform: scale(1.1);
 }
 
 footer {
-    background: #080000;
-    color: #fff;
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 1rem 0;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+    padding: 10px 0;
 }
 
-article {
-    background: #f4f4f4;
-    margin: 1rem 0;
-    padding: 1rem;
-    border-radius: 8px;
+footer ul {
+    list-style-type: none;
 }
 
-article h3 {
-    margin-top: 0;
-}
-
-article a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-article a:hover {
-    text-decoration: underline;
+footer ul li {
+    margin: 5px 0;
 }
